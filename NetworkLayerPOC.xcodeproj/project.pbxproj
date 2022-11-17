@@ -113,6 +113,8 @@
 		8D3D19AE29238CC8006AE458 /* NetworkLayerPOC */ = {
 			isa = PBXGroup;
 			children = (
+				CF4414D72926E389003BE86B /* TestSide */,
+				CF4414CA292679AC003BE86B /* AppSide */,
 				8D3D19C329238DA9006AE458 /* NetworkLayer */,
 				8D3D19AF29238CC8006AE458 /* AppDelegate.swift */,
 				8D3D19B129238CC8006AE458 /* SceneDelegate.swift */,
@@ -127,8 +129,6 @@
 		8D3D19C329238DA9006AE458 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				CF4414D72926E389003BE86B /* TestSide */,
-				CF4414CA292679AC003BE86B /* AppSide */,
 				CF4414C3292662E5003BE86B /* Endpoint */,
 				CF4414C029265536003BE86B /* Logger */,
 				CF4414B829264DE1003BE86B /* Error */,
