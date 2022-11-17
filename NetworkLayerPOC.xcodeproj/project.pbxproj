@@ -30,7 +30,7 @@
 		CF4414C229265545003BE86B /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C129265545003BE86B /* NetworkLogger.swift */; };
 		CF4414C529266480003BE86B /* NetworkClient+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */; };
 		CF4414C7292675E6003BE86B /* WAFErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C6292675E6003BE86B /* WAFErrorDTO.swift */; };
-		CF4414C92926766A003BE86B /* NetworkClient+HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */; };
+		CF4414C92926766A003BE86B /* NetworkClient+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C82926766A003BE86B /* NetworkClient+Error.swift */; };
 		CF4414CC292679C7003BE86B /* WafErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CB292679C7003BE86B /* WafErrorHandlerProtocol.swift */; };
 		CF4414CE2926880B003BE86B /* ErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CD2926880B003BE86B /* ErrorDto.swift */; };
 		CF4414D029268D8C003BE86B /* ValidationErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CF29268D8C003BE86B /* ValidationErrorDto.swift */; };
@@ -66,7 +66,7 @@
 		CF4414C129265545003BE86B /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Cancel.swift"; sourceTree = "<group>"; };
 		CF4414C6292675E6003BE86B /* WAFErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFErrorDTO.swift; sourceTree = "<group>"; };
-		CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+HandleError.swift"; sourceTree = "<group>"; };
+		CF4414C82926766A003BE86B /* NetworkClient+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Error.swift"; sourceTree = "<group>"; };
 		CF4414CB292679C7003BE86B /* WafErrorHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WafErrorHandlerProtocol.swift; sourceTree = "<group>"; };
 		CF4414CD2926880B003BE86B /* ErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDto.swift; sourceTree = "<group>"; };
 		CF4414CF29268D8C003BE86B /* ValidationErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrorDto.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				8D3D19C92923A261006AE458 /* NetworkClient+Execute.swift */,
 				CF4414AC292647AC003BE86B /* NetworkClient+upload.swift */,
 				CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */,
-				CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */,
+				CF4414C82926766A003BE86B /* NetworkClient+Error.swift */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -379,7 +379,7 @@
 				CF4414BB29264E18003BE86B /* ErrorProviderProtocol.swift in Sources */,
 				CF4414AD292647AC003BE86B /* NetworkClient+upload.swift in Sources */,
 				CF4414DD2926ECB5003BE86B /* NetworkClientBuilder.swift in Sources */,
-				CF4414C92926766A003BE86B /* NetworkClient+HandleError.swift in Sources */,
+				CF4414C92926766A003BE86B /* NetworkClient+Error.swift in Sources */,
 				CF4414CE2926880B003BE86B /* ErrorDto.swift in Sources */,
 				CF4414C229265545003BE86B /* NetworkLogger.swift in Sources */,
 				CF4414B729264BED003BE86B /* MultipartData.swift in Sources */,
