@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217C5E56485A4FB73472E1C0 /* Pods_NetworkLayerPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6D2684FE2428E8FAEF70EA /* Pods_NetworkLayerPOC.framework */; };
+		8D3D19B029238CC8006AE458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19AF29238CC8006AE458 /* AppDelegate.swift */; };
+		8D3D19B229238CC8006AE458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19B129238CC8006AE458 /* SceneDelegate.swift */; };
+		8D3D19B429238CC8006AE458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19B329238CC8006AE458 /* ViewController.swift */; };
+		8D3D19B729238CC8006AE458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D19B529238CC8006AE458 /* Main.storyboard */; };
+		8D3D19B929238CC9006AE458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D19B829238CC9006AE458 /* Assets.xcassets */; };
+		8D3D19BC29238CC9006AE458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D19BA29238CC9006AE458 /* LaunchScreen.storyboard */; };
+		8D3D19C529239260006AE458 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19C429239260006AE458 /* Endpoint.swift */; };
+		8D3D19C829239A3D006AE458 /* AuthorizationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19C729239A3D006AE458 /* AuthorizationTypes.swift */; };
+		8D3D19CA2923A261006AE458 /* NetworkClient+Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19C92923A261006AE458 /* NetworkClient+Execute.swift */; };
+		8D3D19CE2923CFB1006AE458 /* NetworkClient+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D19CD2923CFB1006AE458 /* NetworkClient+Response.swift */; };
+		CF4414A72926465E003BE86B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414A62926465E003BE86B /* NetworkClient.swift */; };
+		CF4414A92926471C003BE86B /* AuthTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414A82926471C003BE86B /* AuthTokenProvider.swift */; };
+		CF4414AD292647AC003BE86B /* NetworkClient+upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414AC292647AC003BE86B /* NetworkClient+upload.swift */; };
+		CF4414B0292647EC003BE86B /* NetworkReqeustFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414AF292647EC003BE86B /* NetworkReqeustFactory.swift */; };
+		CF4414B22926480D003BE86B /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414B12926480D003BE86B /* NetworkResponseHandler.swift */; };
+		CF4414B52926486C003BE86B /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414B42926486C003BE86B /* NetworkClientProtocol.swift */; };
+		CF4414B729264BED003BE86B /* MultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414B629264BED003BE86B /* MultipartData.swift */; };
+		CF4414BB29264E18003BE86B /* ErrorProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414BA29264E18003BE86B /* ErrorProviderProtocol.swift */; };
+		CF4414BD29265437003BE86B /* KlivrrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414BC29265437003BE86B /* KlivrrError.swift */; };
+		CF4414C229265545003BE86B /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C129265545003BE86B /* NetworkLogger.swift */; };
+		CF4414C529266480003BE86B /* NetworkClient+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */; };
+		CF4414C7292675E6003BE86B /* WAFErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C6292675E6003BE86B /* WAFErrorDTO.swift */; };
+		CF4414C92926766A003BE86B /* NetworkClient+HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */; };
+		CF4414CC292679C7003BE86B /* WafErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CB292679C7003BE86B /* WafErrorHandlerProtocol.swift */; };
+		CF4414CE2926880B003BE86B /* ErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CD2926880B003BE86B /* ErrorDto.swift */; };
+		CF4414D029268D8C003BE86B /* ValidationErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414CF29268D8C003BE86B /* ValidationErrorDto.swift */; };
+		CF4414D42926D6DC003BE86B /* ErrorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414D32926D6DC003BE86B /* ErrorProvider.swift */; };
+		CF4414D62926DC51003BE86B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414D52926DC51003BE86B /* AuthProvider.swift */; };
+		CF4414D92926E39E003BE86B /* ResponseTestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414D82926E39E003BE86B /* ResponseTestProvider.swift */; };
+		CF4414DB2926EB1F003BE86B /* GeneralErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414DA2926EB1F003BE86B /* GeneralErrorHandlerProtocol.swift */; };
+		CF4414DD2926ECB5003BE86B /* NetworkClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4414DC2926ECB5003BE86B /* NetworkClientBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D3D19AC29238CC8006AE458 /* NetworkLayerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3D19AF29238CC8006AE458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D3D19B129238CC8006AE458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8D3D19B329238CC8006AE458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D3D19B629238CC8006AE458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D3D19B829238CC9006AE458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3D19BB29238CC9006AE458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D3D19BD29238CC9006AE458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3D19C429239260006AE458 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8D3D19C729239A3D006AE458 /* AuthorizationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTypes.swift; sourceTree = "<group>"; };
+		8D3D19C92923A261006AE458 /* NetworkClient+Execute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Execute.swift"; sourceTree = "<group>"; };
+		8D3D19CD2923CFB1006AE458 /* NetworkClient+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Response.swift"; sourceTree = "<group>"; };
+		CF4414A62926465E003BE86B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CF4414A82926471C003BE86B /* AuthTokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenProvider.swift; sourceTree = "<group>"; };
+		CF4414AC292647AC003BE86B /* NetworkClient+upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+upload.swift"; sourceTree = "<group>"; };
+		CF4414AF292647EC003BE86B /* NetworkReqeustFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReqeustFactory.swift; sourceTree = "<group>"; };
+		CF4414B12926480D003BE86B /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseHandler.swift; sourceTree = "<group>"; };
+		CF4414B42926486C003BE86B /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		CF4414B629264BED003BE86B /* MultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartData.swift; sourceTree = "<group>"; };
+		CF4414BA29264E18003BE86B /* ErrorProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProviderProtocol.swift; sourceTree = "<group>"; };
+		CF4414BC29265437003BE86B /* KlivrrError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlivrrError.swift; sourceTree = "<group>"; };
+		CF4414C129265545003BE86B /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Cancel.swift"; sourceTree = "<group>"; };
+		CF4414C6292675E6003BE86B /* WAFErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFErrorDTO.swift; sourceTree = "<group>"; };
+		CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+HandleError.swift"; sourceTree = "<group>"; };
+		CF4414CB292679C7003BE86B /* WafErrorHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WafErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		CF4414CD2926880B003BE86B /* ErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDto.swift; sourceTree = "<group>"; };
+		CF4414CF29268D8C003BE86B /* ValidationErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrorDto.swift; sourceTree = "<group>"; };
+		CF4414D32926D6DC003BE86B /* ErrorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProvider.swift; sourceTree = "<group>"; };
+		CF4414D52926DC51003BE86B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		CF4414D82926E39E003BE86B /* ResponseTestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTestProvider.swift; sourceTree = "<group>"; };
+		CF4414DA2926EB1F003BE86B /* GeneralErrorHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		CF4414DC2926ECB5003BE86B /* NetworkClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientBuilder.swift; sourceTree = "<group>"; };
+		D738E223146A440EB54B2758 /* Pods-NetworkLayerPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerPOC.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerPOC/Pods-NetworkLayerPOC.release.xcconfig"; sourceTree = "<group>"; };
+		DF1B036A1EC3B2A47940BD1E /* Pods-NetworkLayerPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerPOC.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayerPOC/Pods-NetworkLayerPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		EA6D2684FE2428E8FAEF70EA /* Pods_NetworkLayerPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D3D19A929238CC8006AE458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217C5E56485A4FB73472E1C0 /* Pods_NetworkLayerPOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D3D19A329238CC8006AE458 = {
+			isa = PBXGroup;
+			children = (
+				8D3D19AE29238CC8006AE458 /* NetworkLayerPOC */,
+				8D3D19AD29238CC8006AE458 /* Products */,
+				9026439FE501718A35EA53BE /* Pods */,
+				D9DE5A8A192B434719C674D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D3D19AD29238CC8006AE458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D19AC29238CC8006AE458 /* NetworkLayerPOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D3D19AE29238CC8006AE458 /* NetworkLayerPOC */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D19C329238DA9006AE458 /* NetworkLayer */,
+				8D3D19AF29238CC8006AE458 /* AppDelegate.swift */,
+				8D3D19B129238CC8006AE458 /* SceneDelegate.swift */,
+				8D3D19B529238CC8006AE458 /* Main.storyboard */,
+				8D3D19B829238CC9006AE458 /* Assets.xcassets */,
+				8D3D19BA29238CC9006AE458 /* LaunchScreen.storyboard */,
+				8D3D19BD29238CC9006AE458 /* Info.plist */,
+			);
+			path = NetworkLayerPOC;
+			sourceTree = "<group>";
+		};
+		8D3D19C329238DA9006AE458 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414D72926E389003BE86B /* TestSide */,
+				CF4414CA292679AC003BE86B /* AppSide */,
+				CF4414C3292662E5003BE86B /* Endpoint */,
+				CF4414C029265536003BE86B /* Logger */,
+				CF4414B829264DE1003BE86B /* Error */,
+				CF4414B329264830003BE86B /* Response */,
+				CF4414AE292647E1003BE86B /* NetworkFactory */,
+				CF4414AB29264794003BE86B /* Protocol */,
+				CF4414AA2926478C003BE86B /* NetworkClient */,
+				8D3D19C629239A1E006AE458 /* Enums */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		8D3D19C629239A1E006AE458 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D19C729239A3D006AE458 /* AuthorizationTypes.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9026439FE501718A35EA53BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B036A1EC3B2A47940BD1E /* Pods-NetworkLayerPOC.debug.xcconfig */,
+				D738E223146A440EB54B2758 /* Pods-NetworkLayerPOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF4414AA2926478C003BE86B /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414A62926465E003BE86B /* NetworkClient.swift */,
+				8D3D19CD2923CFB1006AE458 /* NetworkClient+Response.swift */,
+				8D3D19C92923A261006AE458 /* NetworkClient+Execute.swift */,
+				CF4414AC292647AC003BE86B /* NetworkClient+upload.swift */,
+				CF4414C429266480003BE86B /* NetworkClient+Cancel.swift */,
+				CF4414C82926766A003BE86B /* NetworkClient+HandleError.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		CF4414AB29264794003BE86B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414A82926471C003BE86B /* AuthTokenProvider.swift */,
+				CF4414B12926480D003BE86B /* NetworkResponseHandler.swift */,
+				CF4414B42926486C003BE86B /* NetworkClientProtocol.swift */,
+				CF4414CB292679C7003BE86B /* WafErrorHandlerProtocol.swift */,
+				CF4414BA29264E18003BE86B /* ErrorProviderProtocol.swift */,
+				CF4414DA2926EB1F003BE86B /* GeneralErrorHandlerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CF4414AE292647E1003BE86B /* NetworkFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414AF292647EC003BE86B /* NetworkReqeustFactory.swift */,
+			);
+			path = NetworkFactory;
+			sourceTree = "<group>";
+		};
+		CF4414B329264830003BE86B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414B629264BED003BE86B /* MultipartData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		CF4414B829264DE1003BE86B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414CD2926880B003BE86B /* ErrorDto.swift */,
+				CF4414C6292675E6003BE86B /* WAFErrorDTO.swift */,
+				CF4414BC29265437003BE86B /* KlivrrError.swift */,
+				CF4414CF29268D8C003BE86B /* ValidationErrorDto.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		CF4414C029265536003BE86B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414C129265545003BE86B /* NetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CF4414C3292662E5003BE86B /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D19C429239260006AE458 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		CF4414CA292679AC003BE86B /* AppSide */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D19B329238CC8006AE458 /* ViewController.swift */,
+				CF4414D32926D6DC003BE86B /* ErrorProvider.swift */,
+				CF4414D52926DC51003BE86B /* AuthProvider.swift */,
+				CF4414DC2926ECB5003BE86B /* NetworkClientBuilder.swift */,
+			);
+			path = AppSide;
+			sourceTree = "<group>";
+		};
+		CF4414D72926E389003BE86B /* TestSide */ = {
+			isa = PBXGroup;
+			children = (
+				CF4414D82926E39E003BE86B /* ResponseTestProvider.swift */,
+			);
+			path = TestSide;
+			sourceTree = "<group>";
+		};
+		D9DE5A8A192B434719C674D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D2684FE2428E8FAEF70EA /* Pods_NetworkLayerPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D3D19AB29238CC8006AE458 /* NetworkLayerPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3D19C029238CC9006AE458 /* Build configuration list for PBXNativeTarget "NetworkLayerPOC" */;
+			buildPhases = (
+				60225ED303366CD821713A4D /* [CP] Check Pods Manifest.lock */,
+				8D3D19A829238CC8006AE458 /* Sources */,
+				8D3D19A929238CC8006AE458 /* Frameworks */,
+				8D3D19AA29238CC8006AE458 /* Resources */,
+				B9E93D73CF6F5712616DF5C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkLayerPOC;
+			productName = NetworkLayerPOC;
+			productReference = 8D3D19AC29238CC8006AE458 /* NetworkLayerPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D3D19A429238CC8006AE458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8D3D19AB29238CC8006AE458 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8D3D19A729238CC8006AE458 /* Build configuration list for PBXProject "NetworkLayerPOC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D3D19A329238CC8006AE458;
+			productRefGroup = 8D3D19AD29238CC8006AE458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D3D19AB29238CC8006AE458 /* NetworkLayerPOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D3D19AA29238CC8006AE458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3D19BC29238CC9006AE458 /* LaunchScreen.storyboard in Resources */,
+				8D3D19B929238CC9006AE458 /* Assets.xcassets in Resources */,
+				8D3D19B729238CC8006AE458 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60225ED303366CD821713A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkLayerPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E93D73CF6F5712616DF5C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerPOC/Pods-NetworkLayerPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerPOC/Pods-NetworkLayerPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerPOC/Pods-NetworkLayerPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D3D19A829238CC8006AE458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4414DB2926EB1F003BE86B /* GeneralErrorHandlerProtocol.swift in Sources */,
+				CF4414BD29265437003BE86B /* KlivrrError.swift in Sources */,
+				CF4414B0292647EC003BE86B /* NetworkReqeustFactory.swift in Sources */,
+				8D3D19B429238CC8006AE458 /* ViewController.swift in Sources */,
+				CF4414D42926D6DC003BE86B /* ErrorProvider.swift in Sources */,
+				CF4414C529266480003BE86B /* NetworkClient+Cancel.swift in Sources */,
+				8D3D19CE2923CFB1006AE458 /* NetworkClient+Response.swift in Sources */,
+				CF4414BB29264E18003BE86B /* ErrorProviderProtocol.swift in Sources */,
+				CF4414AD292647AC003BE86B /* NetworkClient+upload.swift in Sources */,
+				CF4414DD2926ECB5003BE86B /* NetworkClientBuilder.swift in Sources */,
+				CF4414C92926766A003BE86B /* NetworkClient+HandleError.swift in Sources */,
+				CF4414CE2926880B003BE86B /* ErrorDto.swift in Sources */,
+				CF4414C229265545003BE86B /* NetworkLogger.swift in Sources */,
+				CF4414B729264BED003BE86B /* MultipartData.swift in Sources */,
+				CF4414D62926DC51003BE86B /* AuthProvider.swift in Sources */,
+				8D3D19B029238CC8006AE458 /* AppDelegate.swift in Sources */,
+				8D3D19C529239260006AE458 /* Endpoint.swift in Sources */,
+				CF4414D92926E39E003BE86B /* ResponseTestProvider.swift in Sources */,
+				CF4414C7292675E6003BE86B /* WAFErrorDTO.swift in Sources */,
+				CF4414B52926486C003BE86B /* NetworkClientProtocol.swift in Sources */,
+				CF4414B22926480D003BE86B /* NetworkResponseHandler.swift in Sources */,
+				8D3D19B229238CC8006AE458 /* SceneDelegate.swift in Sources */,
+				CF4414A92926471C003BE86B /* AuthTokenProvider.swift in Sources */,
+				CF4414A72926465E003BE86B /* NetworkClient.swift in Sources */,
+				8D3D19C829239A3D006AE458 /* AuthorizationTypes.swift in Sources */,
+				CF4414D029268D8C003BE86B /* ValidationErrorDto.swift in Sources */,
+				CF4414CC292679C7003BE86B /* WafErrorHandlerProtocol.swift in Sources */,
+				8D3D19CA2923A261006AE458 /* NetworkClient+Execute.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D3D19B529238CC8006AE458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3D19B629238CC8006AE458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D3D19BA29238CC9006AE458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3D19BB29238CC9006AE458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D3D19BE29238CC9006AE458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D3D19BF29238CC9006AE458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D3D19C129238CC9006AE458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1B036A1EC3B2A47940BD1E /* Pods-NetworkLayerPOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2767XA8BL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkLayerPOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ramzy.NetworkLayerPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D3D19C229238CC9006AE458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D738E223146A440EB54B2758 /* Pods-NetworkLayerPOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2767XA8BL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkLayerPOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ramzy.NetworkLayerPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D3D19A729238CC8006AE458 /* Build configuration list for PBXProject "NetworkLayerPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3D19BE29238CC9006AE458 /* Debug */,
+				8D3D19BF29238CC9006AE458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3D19C029238CC9006AE458 /* Build configuration list for PBXNativeTarget "NetworkLayerPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3D19C129238CC9006AE458 /* Debug */,
+				8D3D19C229238CC9006AE458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D3D19A429238CC8006AE458 /* Project object */;
+}
