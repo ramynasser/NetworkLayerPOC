@@ -19,8 +19,8 @@ extension NetworkResponseHandler {
         switch endpoint.type {
         case .server:
             getResponseFromServer(response, expectedModel, completion: completion)
-        case .localFile(let fileName):
-            let responseModel: T? = getData(fileName: fileName)
+        case .localFile(let bundle, let fileName):
+            let responseModel: T? = getData(bundle: bundle, fileName: fileName)
             completion?(NetworkResponse<T>.success(responseModel))
         case .sandbox:
             return
@@ -42,8 +42,7 @@ extension NetworkResponseHandler {
         }
     }
     
-    private func getData<T: Codable>(fileName: String, withExtension: String = "json") -> T? {
-        let bundle = Bundle.main
+    private func getData<T: Codable>(bundle: Bundle, fileName: String, withExtension: String = "json") -> T? {
         let fileUrl = bundle.url(forResource: fileName, withExtension: withExtension)
         let data = try? Data(contentsOf: fileUrl!)
         do {

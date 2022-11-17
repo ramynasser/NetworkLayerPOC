@@ -10,7 +10,7 @@ import Alamofire
 enum EndpointType {
     case server
     case sandbox
-    case localFile(fileName: String)
+    case localFile(bundle: Bundle, fileName: String)
 }
 protocol Endpoint {
     var baseURL: String { get }
