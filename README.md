@@ -10,7 +10,7 @@
 ### 🚧 Extra Notes
 <!-- (if applicable) Any special notes, other areas affected by this code change, etc. -->
    ##### This PR depend on
-    -[Pull request name](YOUR-PULL-REQUEST-URL)
+    - [pull request](url)
 
 ### 📷 Screenshots
 <!-- Please provide a screenshot of your change. -->
