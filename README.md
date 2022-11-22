@@ -7,7 +7,7 @@
   ##### How we add this change?
    - brief description how we add this change 
   ##### This PR depend on
-    - [Jira ticket](url)
+   - [pull request](url)
     
 ### 🚧 Extra Notes
 <!-- (if applicable) Any special notes, other areas affected by this code change, etc. -->
